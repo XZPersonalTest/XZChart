@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18D9408D1F467A3D00048ECA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9408C1F467A3D00048ECA /* main.m */; };
+		18D940901F467A3D00048ECA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D9408F1F467A3D00048ECA /* AppDelegate.m */; };
+		18D940931F467A3D00048ECA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D940921F467A3D00048ECA /* ViewController.m */; };
+		18D940961F467A3D00048ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D940941F467A3D00048ECA /* Main.storyboard */; };
+		18D940981F467A3D00048ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D940971F467A3D00048ECA /* Assets.xcassets */; };
+		18D9409B1F467A3D00048ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D940991F467A3D00048ECA /* LaunchScreen.storyboard */; };
+		18D940A61F467A3D00048ECA /* XZChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D940A51F467A3D00048ECA /* XZChartTests.m */; };
+		18D940B11F467A3D00048ECA /* XZChartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D940B01F467A3D00048ECA /* XZChartUITests.m */; };
+		18D940C31F467C9300048ECA /* XZChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D940C21F467C9300048ECA /* XZChart.m */; };
+		18D940C61F4695BD00048ECA /* XZChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D940C51F4695BD00048ECA /* XZChartLabel.m */; };
+		18D940C91F46962B00048ECA /* XZChartConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D940C81F46962B00048ECA /* XZChartConst.m */; };
+		18D940CF1F46B26300048ECA /* XZBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D940CE1F46B26300048ECA /* XZBarChart.m */; };
+		18D940D51F46B62300048ECA /* XZLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D940D41F46B62300048ECA /* XZLineChart.m */; };
+		18D940D81F46B64900048ECA /* XZLineBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D940D71F46B64900048ECA /* XZLineBarChart.m */; };
+		18D940DB1F46BDB800048ECA /* XZChartTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D940DA1F46BDB800048ECA /* XZChartTool.m */; };
+		18D940E41F46DEB600048ECA /* XZChartTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D940E21F46DEB600048ECA /* XZChartTableVC.m */; };
+		18D940E51F46DEB600048ECA /* XZChartTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D940E31F46DEB600048ECA /* XZChartTableVC.xib */; };
+		18D940EE1F46E32900048ECA /* XZChartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D940EC1F46E32900048ECA /* XZChartVC.m */; };
+		18D940EF1F46E32900048ECA /* XZChartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D940ED1F46E32900048ECA /* XZChartVC.xib */; };
+		18D940F31F46E93600048ECA /* XZChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D940F11F46E93600048ECA /* XZChartCell.m */; };
+		18D940F41F46E93600048ECA /* XZChartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D940F21F46E93600048ECA /* XZChartCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18D940A21F467A3D00048ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18D940801F467A3D00048ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18D940871F467A3D00048ECA;
+			remoteInfo = XZChart;
+		};
+		18D940AD1F467A3D00048ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18D940801F467A3D00048ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18D940871F467A3D00048ECA;
+			remoteInfo = XZChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18D940881F467A3D00048ECA /* XZChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D9408C1F467A3D00048ECA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18D9408E1F467A3D00048ECA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18D9408F1F467A3D00048ECA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18D940911F467A3D00048ECA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18D940921F467A3D00048ECA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18D940951F467A3D00048ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18D940971F467A3D00048ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18D9409A1F467A3D00048ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18D9409C1F467A3D00048ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D940A11F467A3D00048ECA /* XZChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XZChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D940A51F467A3D00048ECA /* XZChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZChartTests.m; sourceTree = "<group>"; };
+		18D940A71F467A3D00048ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D940AC1F467A3D00048ECA /* XZChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XZChartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D940B01F467A3D00048ECA /* XZChartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZChartUITests.m; sourceTree = "<group>"; };
+		18D940B21F467A3D00048ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D940C11F467C9300048ECA /* XZChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZChart.h; sourceTree = "<group>"; };
+		18D940C21F467C9300048ECA /* XZChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZChart.m; sourceTree = "<group>"; };
+		18D940C41F4695BD00048ECA /* XZChartLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZChartLabel.h; sourceTree = "<group>"; };
+		18D940C51F4695BD00048ECA /* XZChartLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZChartLabel.m; sourceTree = "<group>"; };
+		18D940C71F46962B00048ECA /* XZChartConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZChartConst.h; sourceTree = "<group>"; };
+		18D940C81F46962B00048ECA /* XZChartConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZChartConst.m; sourceTree = "<group>"; };
+		18D940CD1F46B26300048ECA /* XZBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZBarChart.h; sourceTree = "<group>"; };
+		18D940CE1F46B26300048ECA /* XZBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZBarChart.m; sourceTree = "<group>"; };
+		18D940D31F46B62300048ECA /* XZLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLineChart.h; sourceTree = "<group>"; };
+		18D940D41F46B62300048ECA /* XZLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLineChart.m; sourceTree = "<group>"; };
+		18D940D61F46B64900048ECA /* XZLineBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLineBarChart.h; sourceTree = "<group>"; };
+		18D940D71F46B64900048ECA /* XZLineBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLineBarChart.m; sourceTree = "<group>"; };
+		18D940D91F46BDB800048ECA /* XZChartTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZChartTool.h; sourceTree = "<group>"; };
+		18D940DA1F46BDB800048ECA /* XZChartTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZChartTool.m; sourceTree = "<group>"; };
+		18D940E11F46DEB600048ECA /* XZChartTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZChartTableVC.h; sourceTree = "<group>"; };
+		18D940E21F46DEB600048ECA /* XZChartTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZChartTableVC.m; sourceTree = "<group>"; };
+		18D940E31F46DEB600048ECA /* XZChartTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZChartTableVC.xib; sourceTree = "<group>"; };
+		18D940EB1F46E32900048ECA /* XZChartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZChartVC.h; sourceTree = "<group>"; };
+		18D940EC1F46E32900048ECA /* XZChartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZChartVC.m; sourceTree = "<group>"; };
+		18D940ED1F46E32900048ECA /* XZChartVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZChartVC.xib; sourceTree = "<group>"; };
+		18D940F01F46E93600048ECA /* XZChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZChartCell.h; sourceTree = "<group>"; };
+		18D940F11F46E93600048ECA /* XZChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZChartCell.m; sourceTree = "<group>"; };
+		18D940F21F46E93600048ECA /* XZChartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZChartCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18D940851F467A3D00048ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D9409E1F467A3D00048ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D940A91F467A3D00048ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18D9407F1F467A3D00048ECA = {
+			isa = PBXGroup;
+			children = (
+				18D9408A1F467A3D00048ECA /* XZChart */,
+				18D940A41F467A3D00048ECA /* XZChartTests */,
+				18D940AF1F467A3D00048ECA /* XZChartUITests */,
+				18D940891F467A3D00048ECA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18D940891F467A3D00048ECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18D940881F467A3D00048ECA /* XZChart.app */,
+				18D940A11F467A3D00048ECA /* XZChartTests.xctest */,
+				18D940AC1F467A3D00048ECA /* XZChartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18D9408A1F467A3D00048ECA /* XZChart */ = {
+			isa = PBXGroup;
+			children = (
+				18D940C01F467B9B00048ECA /* XZChartSDK */,
+				18D940BF1F467B3300048ECA /* XZChartView */,
+				18D9408E1F467A3D00048ECA /* AppDelegate.h */,
+				18D9408F1F467A3D00048ECA /* AppDelegate.m */,
+				18D940911F467A3D00048ECA /* ViewController.h */,
+				18D940921F467A3D00048ECA /* ViewController.m */,
+				18D940941F467A3D00048ECA /* Main.storyboard */,
+				18D940971F467A3D00048ECA /* Assets.xcassets */,
+				18D940991F467A3D00048ECA /* LaunchScreen.storyboard */,
+				18D9409C1F467A3D00048ECA /* Info.plist */,
+				18D9408B1F467A3D00048ECA /* Supporting Files */,
+			);
+			path = XZChart;
+			sourceTree = "<group>";
+		};
+		18D9408B1F467A3D00048ECA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18D9408C1F467A3D00048ECA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18D940A41F467A3D00048ECA /* XZChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				18D940A51F467A3D00048ECA /* XZChartTests.m */,
+				18D940A71F467A3D00048ECA /* Info.plist */,
+			);
+			path = XZChartTests;
+			sourceTree = "<group>";
+		};
+		18D940AF1F467A3D00048ECA /* XZChartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18D940B01F467A3D00048ECA /* XZChartUITests.m */,
+				18D940B21F467A3D00048ECA /* Info.plist */,
+			);
+			path = XZChartUITests;
+			sourceTree = "<group>";
+		};
+		18D940BF1F467B3300048ECA /* XZChartView */ = {
+			isa = PBXGroup;
+			children = (
+				18D940E11F46DEB600048ECA /* XZChartTableVC.h */,
+				18D940E21F46DEB600048ECA /* XZChartTableVC.m */,
+				18D940E31F46DEB600048ECA /* XZChartTableVC.xib */,
+				18D940EB1F46E32900048ECA /* XZChartVC.h */,
+				18D940EC1F46E32900048ECA /* XZChartVC.m */,
+				18D940ED1F46E32900048ECA /* XZChartVC.xib */,
+				18D940F01F46E93600048ECA /* XZChartCell.h */,
+				18D940F11F46E93600048ECA /* XZChartCell.m */,
+				18D940F21F46E93600048ECA /* XZChartCell.xib */,
+			);
+			path = XZChartView;
+			sourceTree = "<group>";
+		};
+		18D940C01F467B9B00048ECA /* XZChartSDK */ = {
+			isa = PBXGroup;
+			children = (
+				18D940C11F467C9300048ECA /* XZChart.h */,
+				18D940C21F467C9300048ECA /* XZChart.m */,
+				18D940C41F4695BD00048ECA /* XZChartLabel.h */,
+				18D940C51F4695BD00048ECA /* XZChartLabel.m */,
+				18D940C71F46962B00048ECA /* XZChartConst.h */,
+				18D940C81F46962B00048ECA /* XZChartConst.m */,
+				18D940D61F46B64900048ECA /* XZLineBarChart.h */,
+				18D940D71F46B64900048ECA /* XZLineBarChart.m */,
+				18D940D31F46B62300048ECA /* XZLineChart.h */,
+				18D940D41F46B62300048ECA /* XZLineChart.m */,
+				18D940CD1F46B26300048ECA /* XZBarChart.h */,
+				18D940CE1F46B26300048ECA /* XZBarChart.m */,
+				18D940D91F46BDB800048ECA /* XZChartTool.h */,
+				18D940DA1F46BDB800048ECA /* XZChartTool.m */,
+			);
+			path = XZChartSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18D940871F467A3D00048ECA /* XZChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D940B51F467A3D00048ECA /* Build configuration list for PBXNativeTarget "XZChart" */;
+			buildPhases = (
+				18D940841F467A3D00048ECA /* Sources */,
+				18D940851F467A3D00048ECA /* Frameworks */,
+				18D940861F467A3D00048ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XZChart;
+			productName = XZChart;
+			productReference = 18D940881F467A3D00048ECA /* XZChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18D940A01F467A3D00048ECA /* XZChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D940B81F467A3D00048ECA /* Build configuration list for PBXNativeTarget "XZChartTests" */;
+			buildPhases = (
+				18D9409D1F467A3D00048ECA /* Sources */,
+				18D9409E1F467A3D00048ECA /* Frameworks */,
+				18D9409F1F467A3D00048ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18D940A31F467A3D00048ECA /* PBXTargetDependency */,
+			);
+			name = XZChartTests;
+			productName = XZChartTests;
+			productReference = 18D940A11F467A3D00048ECA /* XZChartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18D940AB1F467A3D00048ECA /* XZChartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D940BB1F467A3D00048ECA /* Build configuration list for PBXNativeTarget "XZChartUITests" */;
+			buildPhases = (
+				18D940A81F467A3D00048ECA /* Sources */,
+				18D940A91F467A3D00048ECA /* Frameworks */,
+				18D940AA1F467A3D00048ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18D940AE1F467A3D00048ECA /* PBXTargetDependency */,
+			);
+			name = XZChartUITests;
+			productName = XZChartUITests;
+			productReference = 18D940AC1F467A3D00048ECA /* XZChartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18D940801F467A3D00048ECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = HackerSpace;
+				TargetAttributes = {
+					18D940871F467A3D00048ECA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3LM4E4MSP3;
+						ProvisioningStyle = Automatic;
+					};
+					18D940A01F467A3D00048ECA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = T76SE52533;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18D940871F467A3D00048ECA;
+					};
+					18D940AB1F467A3D00048ECA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = T76SE52533;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18D940871F467A3D00048ECA;
+					};
+				};
+			};
+			buildConfigurationList = 18D940831F467A3D00048ECA /* Build configuration list for PBXProject "XZChart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18D9407F1F467A3D00048ECA;
+			productRefGroup = 18D940891F467A3D00048ECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18D940871F467A3D00048ECA /* XZChart */,
+				18D940A01F467A3D00048ECA /* XZChartTests */,
+				18D940AB1F467A3D00048ECA /* XZChartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18D940861F467A3D00048ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D9409B1F467A3D00048ECA /* LaunchScreen.storyboard in Resources */,
+				18D940981F467A3D00048ECA /* Assets.xcassets in Resources */,
+				18D940F41F46E93600048ECA /* XZChartCell.xib in Resources */,
+				18D940961F467A3D00048ECA /* Main.storyboard in Resources */,
+				18D940E51F46DEB600048ECA /* XZChartTableVC.xib in Resources */,
+				18D940EF1F46E32900048ECA /* XZChartVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D9409F1F467A3D00048ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D940AA1F467A3D00048ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18D940841F467A3D00048ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D940E41F46DEB600048ECA /* XZChartTableVC.m in Sources */,
+				18D940F31F46E93600048ECA /* XZChartCell.m in Sources */,
+				18D940CF1F46B26300048ECA /* XZBarChart.m in Sources */,
+				18D940C91F46962B00048ECA /* XZChartConst.m in Sources */,
+				18D940C31F467C9300048ECA /* XZChart.m in Sources */,
+				18D940931F467A3D00048ECA /* ViewController.m in Sources */,
+				18D940D51F46B62300048ECA /* XZLineChart.m in Sources */,
+				18D940C61F4695BD00048ECA /* XZChartLabel.m in Sources */,
+				18D940DB1F46BDB800048ECA /* XZChartTool.m in Sources */,
+				18D940D81F46B64900048ECA /* XZLineBarChart.m in Sources */,
+				18D940901F467A3D00048ECA /* AppDelegate.m in Sources */,
+				18D9408D1F467A3D00048ECA /* main.m in Sources */,
+				18D940EE1F46E32900048ECA /* XZChartVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D9409D1F467A3D00048ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D940A61F467A3D00048ECA /* XZChartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D940A81F467A3D00048ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D940B11F467A3D00048ECA /* XZChartUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18D940A31F467A3D00048ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18D940871F467A3D00048ECA /* XZChart */;
+			targetProxy = 18D940A21F467A3D00048ECA /* PBXContainerItemProxy */;
+		};
+		18D940AE1F467A3D00048ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18D940871F467A3D00048ECA /* XZChart */;
+			targetProxy = 18D940AD1F467A3D00048ECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18D940941F467A3D00048ECA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18D940951F467A3D00048ECA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18D940991F467A3D00048ECA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18D9409A1F467A3D00048ECA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18D940B31F467A3D00048ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18D940B41F467A3D00048ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18D940B61F467A3D00048ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3LM4E4MSP3;
+				INFOPLIST_FILE = XZChart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HackerSpace.XZChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18D940B71F467A3D00048ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3LM4E4MSP3;
+				INFOPLIST_FILE = XZChart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HackerSpace.XZChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18D940B91F467A3D00048ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T76SE52533;
+				INFOPLIST_FILE = XZChartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HackerSpace.XZChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XZChart.app/XZChart";
+			};
+			name = Debug;
+		};
+		18D940BA1F467A3D00048ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T76SE52533;
+				INFOPLIST_FILE = XZChartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HackerSpace.XZChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XZChart.app/XZChart";
+			};
+			name = Release;
+		};
+		18D940BC1F467A3D00048ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T76SE52533;
+				INFOPLIST_FILE = XZChartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HackerSpace.XZChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XZChart;
+			};
+			name = Debug;
+		};
+		18D940BD1F467A3D00048ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T76SE52533;
+				INFOPLIST_FILE = XZChartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HackerSpace.XZChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XZChart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18D940831F467A3D00048ECA /* Build configuration list for PBXProject "XZChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D940B31F467A3D00048ECA /* Debug */,
+				18D940B41F467A3D00048ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D940B51F467A3D00048ECA /* Build configuration list for PBXNativeTarget "XZChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D940B61F467A3D00048ECA /* Debug */,
+				18D940B71F467A3D00048ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18D940B81F467A3D00048ECA /* Build configuration list for PBXNativeTarget "XZChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D940B91F467A3D00048ECA /* Debug */,
+				18D940BA1F467A3D00048ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18D940BB1F467A3D00048ECA /* Build configuration list for PBXNativeTarget "XZChartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D940BC1F467A3D00048ECA /* Debug */,
+				18D940BD1F467A3D00048ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18D940801F467A3D00048ECA /* Project object */;
+}
