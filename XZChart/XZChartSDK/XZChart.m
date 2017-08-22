@@ -10,8 +10,15 @@
 
 @interface XZChart ()
 
-// 图形View
+// 折线图+柱状图 图形View
 @property (strong,nonatomic) XZLineBarChart *lineBarView;
+
+// 折线图 图形View
+@property (strong,nonatomic) XZLineChart *lineView;
+
+// 柱状图 图形View
+@property (strong,nonatomic) XZBarChart *barView;
+
 
 
 @end
@@ -48,20 +55,35 @@
             break;
         case XZChartStyleBar:
         {
-//            if (!_barChart) {
-//                _barChart = [[XZBarChart alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-//                [self addSubview:_barChart];
-//            }
-//            if ([self.dataSource respondsToSelector:@selector(chartLeftRange:)]) {
-//                [_barChart setLeftChooseRange:[self.dataSource chartLeftRange:self]];
-//            }
-//            if ([self.dataSource respondsToSelector:@selector(chartConfigColors:)]) {
-//                [_barChart setColors:[self.dataSource chartConfigColors:self]];
-//            }
-//            [_barChart setYValues:[self.dataSource chartConfigAxisYValue:self]];
-//            [_barChart setXLabels:[self.dataSource chartConfigAxisXLabel:self]];
-//            
-//            [_barChart strokeChart];
+            if (!_barView) {
+                _barView = [[XZBarChart alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+                [self addSubview:_barView];
+            }
+            // 图表总高度
+            _barView.chartHeight = 200;
+            // X轴坐标
+            _barView.xAxis = self.xAxis;
+            // X轴坐标单位
+            _barView.unitX = self.unitX;
+            // 左侧Y轴坐标单位
+            _barView.unitLeftY = self.unitLeftY;
+            // 右侧Y轴坐标单位
+            _barView.unitRightY = self.unitRightY;
+            // 底部图标标注
+            _barView.markArr = self.markArr;
+            // 柱形图数据
+            _barView.barChartValue = self.barChartValue;
+            // 柱形图颜色
+            _barView.barColors = self.barColors;
+            // 柱形图背景色
+            _barView.barBgColors = self.barBgColors;
+            // 柱形图数据数值
+            _barView.isShowBarValue = self.isShowBarValue;
+            // 显示网格横线
+            _barView.isShowHorizonLine = self.isShowHorizonLine;
+            
+            [_barView strokeChartBar];
+            
             
         }
             break;
@@ -71,21 +93,30 @@
                 _lineBarView = [[XZLineBarChart alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
                 [self addSubview:_lineBarView];
             }
-            
+            // 图表总高度
+            _lineBarView.chartHeight = 200;
             // X轴坐标
             _lineBarView.xAxis = self.xAxis;
+            // X轴坐标单位
+            _lineBarView.unitX = self.unitX;
+            // 左侧Y轴坐标单位
+            _lineBarView.unitLeftY = self.unitLeftY;
+            // 右侧Y轴坐标单位
+            _lineBarView.unitRightY = self.unitRightY;
+            // 底部图标标注
+            _lineBarView.markArr = self.markArr;
             // 折线数据
             _lineBarView.lineChartValue = self.lineChartValue;
             // 柱形图数据
             _lineBarView.barChartValue = self.barChartValue;
-            // X轴坐标单位
-            _lineBarView.unitX = self.unitX;
-            // Y轴坐标单位
-            _lineBarView.unitY = self.unitY;
             // 折线颜色
-            _lineBarView.lineColor = self.lineColor;
+            _lineBarView.lineColors = self.lineColors;
+            // 柱形图颜色
+            _lineBarView.barColors = self.barColors;
+            // 柱形图背景色
+            _lineBarView.barBgColors = self.barBgColors;
             // 转折点数值
-            _lineBarView.isShowChartValue = YES;
+            _lineBarView.isShowLineValue = self.isShowLineValue;
             // 显示网格横线
             _lineBarView.isShowHorizonLine = self.isShowHorizonLine;
 
