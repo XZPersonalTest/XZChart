@@ -41,7 +41,7 @@
     
     
     
-    XZChart *chartView = [[XZChart alloc] initWithFrame:CGRectMake(10, 10, [UIScreen mainScreen].bounds.size.width-20, 150)
+    XZChart *chartView = [[XZChart alloc] initWithFrame:CGRectMake(10, 10, [UIScreen mainScreen].bounds.size.width-20, 200)
                                               style:self.chartType];
     
     self.chartView= chartView;
@@ -52,7 +52,7 @@
         {
             self.chartView.lineChartValue = @[ary0];
             
-            self.chartView.barChartValue = @[ary4];
+            self.chartView.barChartValue = @[ary1, ary3];
         }
             break;
         case 1:
@@ -88,11 +88,34 @@
             break;
     }
     
+    switch (self.chartType) {
+        case 0:
+        {
+            
+        }
+            break;
+        case 1:
+        {
+            self.chartView.unitLeftY = @"供货量/吨";
+            self.chartView.unitRightY = @"库存量/吨";
+            self.chartView.markArr = @[@"库存量", @"供货量"];
+        }
+            break;
+        case 2:
+        {
+            self.chartView.unitLeftY = @"价格/元";
+            self.chartView.unitRightY = @"交易量/吨";
+            self.chartView.markArr = @[@"交易量", @"价格"];
+        }
+            break;
+            
+        default:
+            break;
+    }
     
-    self.chartView.unitY = @"价格/元";
-    self.chartView.lineColor = [UIColor redColor];
+    self.chartView.barColors = @[[UIColor colorWithRed:46.0/255.0 green:161.0/255.0 blue:242.0/255.0 alpha:1.0], [UIColor colorWithRed:255.0/255.0 green:150.0/255.0 blue:22.0/255.0 alpha:1.0]];
     self.chartView.isShowHorizonLine = YES;
-    self.chartView.isShowChartValue = YES;
+    self.chartView.isShowLineValue = YES;
     
     [self.chartView showInView:self.contentView];
     

@@ -21,7 +21,7 @@
         [self setLineBreakMode:NSLineBreakByWordWrapping];
         [self setMinimumScaleFactor:5.0f];
         [self setNumberOfLines:1];
-        [self setFont:[UIFont boldSystemFontOfSize:9.0f]];
+        [self setFont:[UIFont boldSystemFontOfSize:10.0f]];
         [self setTextColor: [XZColor darkGrayColor]];
         [self setTextAlignment:NSTextAlignmentCenter];
         self.backgroundColor = [UIColor clearColor];

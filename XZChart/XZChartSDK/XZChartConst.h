@@ -9,13 +9,15 @@
 #import <UIKit/UIKit.h>
 
 
-// 转折点数字label高度
+// 转折点数字label高度 
 #define XZLabelHeight       10
 // Y轴左右两边左边值label宽度
 #define XZYLabelwidth       30
 // 折线数值Label宽度
 #define XZTagLabelwidth     80
 
+// 底部边距
+#define XZBottomMargin      50
 
 typedef NS_ENUM(NSInteger, XZChartStyle) {
     
@@ -51,11 +53,12 @@ static const CGRange CGRangeZero = {0,0};
 
 @interface XZColor : UIColor
 
-+(UIColor *)randomColor;
-+(UIColor *)randomColorDeep;
-+(UIColor *)randomColorlight;
-+(UIColor *)red;
-+(UIColor *)green;
-+(UIColor *)brown;
++ (UIColor *)randomColor;
++ (UIColor *)randomColorDeep;
++ (UIColor *)randomColorlight;
++ (UIColor *)red;
++ (UIColor *)green;
++ (UIColor *)brown;
++ (UIColor *)gray;
 
 @end

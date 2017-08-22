@@ -35,13 +35,22 @@
 // 柱形图数据数组 数组里套数组 可一次传递多组数据
 @property (strong,nonatomic) NSArray <NSArray *>*barChartValue;
 
-// Y轴坐标单位
-@property (strong,nonatomic) NSString *unitY;
+// 左侧Y轴坐标单位
+@property (strong,nonatomic) NSString *unitLeftY;
+// 右侧Y轴坐标单位
+@property (strong,nonatomic) NSString *unitRightY;
 // X轴坐标单位
 @property (strong,nonatomic) NSString *unitX;
 
+/** 图标底部标注 */
+@property(nonatomic,strong)NSArray *markArr;
+
 // 折线图线条颜色
-@property (strong,nonatomic) UIColor *lineColor;
+@property (strong,nonatomic) NSArray <UIColor *> *lineColors;
+// 柱形图颜色
+@property (strong,nonatomic) NSArray <UIColor *> *barColors;
+// 柱形图背景色
+@property (strong,nonatomic) NSArray <UIColor *> *barBgColors;
 
 /** 是否显示横线 */
 @property (assign,nonatomic) BOOL isShowHorizonLine;
@@ -49,8 +58,11 @@
 /** 是否显示竖线 */
 @property (assign,nonatomic) BOOL isShowVerticalLine;
 
-/** 是否显示数据数值 */
-@property (assign,nonatomic) BOOL isShowChartValue;
+/** 是否显示折线图数据数值 */
+@property (assign,nonatomic) BOOL isShowLineValue;
+
+/** 是否显示柱形图数据数值 */
+@property (assign,nonatomic) BOOL isShowBarValue;
 
 // 创建
 - (id)initWithFrame:(CGRect)rect style:(XZChartStyle)style;
