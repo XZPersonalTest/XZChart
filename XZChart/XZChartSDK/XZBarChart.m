@@ -317,15 +317,13 @@
             return;
         NSArray *childAry = _barChartValue[i];
         
-        UIColor *color = _barColors.count ? _barChartValue.count == _barColors.count ?  _barColors[i] : [XZColor green] : [XZColor green];
-        
         for (int j=0; j<childAry.count; j++) {
             
             // 数值与高度比换算
             NSString *valueString = childAry[j];
             float value = [valueString floatValue];
             
-            float grade = ((float)value-_yRightValueMin) / ((float)_yRightValueMax-_yRightValueMin);
+            float grade = ((float)value - (i == 0 ? _yLeftValueMin : _yRightValueMin)) / ((float)(i == 0 ? _yLeftValueMax : _yRightValueMax) - (i == 0 ? _yLeftValueMin : _yRightValueMin));
             
             //划线
             CAShapeLayer *_chartLine = [CAShapeLayer layer];
@@ -343,7 +341,7 @@
             CGFloat xPosition = XZYLabelwidth + _xLabelWidth/2.0;
             
             if (_barChartValue.count == 2) {
-                // 第一个值最后的减10为减掉向左的偏移量   第二个值最后的加10为加上向右的偏移量
+                // 第一个值最后的减7为减掉向左的偏移量   第二个值最后的加7为加上向右的偏移量
                 xPosition = i == 0 ? XZYLabelwidth + _xLabelWidth/2.0 + 10 - 7: XZYLabelwidth + _xLabelWidth/2.0 + 10 + 7;
             }
             
@@ -356,6 +354,7 @@
             _chartLine.path = progressline.CGPath;
             
             // 柱形图颜色
+            UIColor *color = _barColors.count ? _barChartValue.count == _barColors.count ?  _barColors[_barColors.count - 1 - i] : [XZColor green] : [XZColor green];
             _chartLine.strokeColor = color.CGColor;
             
             CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
@@ -370,16 +369,17 @@
             
         }
         
-        [self configChartMarkIndex:i color:color];
+        [self configChartMarkIndex:i];
     }
 }
 
 
 
 #pragma mark - 图表标注
-- (void)configChartMarkIndex:(NSInteger)index color:(UIColor *)color
+- (void)configChartMarkIndex:(NSInteger)index
 {
     
+    UIColor *color = _barColors.count ? _barChartValue.count == _barColors.count ?  _barColors[index] : [XZColor green] : [XZColor green];
     //划线
     CAShapeLayer *_chartLine = [CAShapeLayer layer];
     _chartLine.lineJoin = kCALineJoinBevel;
