@@ -24,11 +24,11 @@
 		C05F53DB1F4C54C200117734 /* XZChartConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C05F53CE1F4C54C200117734 /* XZChartConst.m */; };
 		C05F53DC1F4C54C200117734 /* XZChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C05F53D01F4C54C200117734 /* XZChartLabel.m */; };
 		C05F53DD1F4C54C200117734 /* XZChartTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C05F53D21F4C54C200117734 /* XZChartTool.m */; };
-		C05F53DE1F4C54C200117734 /* XZLineBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C05F53D41F4C54C200117734 /* XZLineBarChart.m */; };
 		C05F53DF1F4C54C200117734 /* XZLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C05F53D61F4C54C200117734 /* XZLineChart.m */; };
 		C05F53E01F4C54C200117734 /* XZSpaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = C05F53D81F4C54C200117734 /* XZSpaceView.m */; };
 		C05F53E21F4C54F800117734 /* XZChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C05F53E11F4C54F800117734 /* XZChartCell.m */; };
-		DE51B9FC1F50206C0064782C /* XZBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DE51B9FB1F50206C0064782C /* XZBarChart.m */; };
+		DE464A081F56678B0016F0DE /* XZBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DE464A071F56678B0016F0DE /* XZBarChart.m */; };
+		DE464A0A1F5667990016F0DE /* XZLineBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = DE464A091F5667990016F0DE /* XZLineBarChart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,14 +83,14 @@
 		C05F53D11F4C54C200117734 /* XZChartTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZChartTool.h; sourceTree = "<group>"; };
 		C05F53D21F4C54C200117734 /* XZChartTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZChartTool.m; sourceTree = "<group>"; };
 		C05F53D31F4C54C200117734 /* XZLineBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLineBarChart.h; sourceTree = "<group>"; };
-		C05F53D41F4C54C200117734 /* XZLineBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLineBarChart.m; sourceTree = "<group>"; };
 		C05F53D51F4C54C200117734 /* XZLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLineChart.h; sourceTree = "<group>"; };
 		C05F53D61F4C54C200117734 /* XZLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLineChart.m; sourceTree = "<group>"; };
 		C05F53D71F4C54C200117734 /* XZSpaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZSpaceView.h; sourceTree = "<group>"; };
 		C05F53D81F4C54C200117734 /* XZSpaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZSpaceView.m; sourceTree = "<group>"; };
 		C05F53E11F4C54F800117734 /* XZChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZChartCell.m; sourceTree = "<group>"; };
 		C0F821F81F47FFEC00ECACA2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		DE51B9FB1F50206C0064782C /* XZBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZBarChart.m; sourceTree = "<group>"; };
+		DE464A071F56678B0016F0DE /* XZBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZBarChart.m; sourceTree = "<group>"; };
+		DE464A091F5667990016F0DE /* XZLineBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLineBarChart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				C05F53C91F4C54C200117734 /* XZBarChart.h */,
-				DE51B9FB1F50206C0064782C /* XZBarChart.m */,
+				DE464A071F56678B0016F0DE /* XZBarChart.m */,
 				C05F53CB1F4C54C200117734 /* XZChart.h */,
 				C05F53CC1F4C54C200117734 /* XZChart.m */,
 				C05F53CD1F4C54C200117734 /* XZChartConst.h */,
@@ -213,7 +213,7 @@
 				C05F53D11F4C54C200117734 /* XZChartTool.h */,
 				C05F53D21F4C54C200117734 /* XZChartTool.m */,
 				C05F53D31F4C54C200117734 /* XZLineBarChart.h */,
-				C05F53D41F4C54C200117734 /* XZLineBarChart.m */,
+				DE464A091F5667990016F0DE /* XZLineBarChart.m */,
 				C05F53D51F4C54C200117734 /* XZLineChart.h */,
 				C05F53D61F4C54C200117734 /* XZLineChart.m */,
 				C05F53D71F4C54C200117734 /* XZSpaceView.h */,
@@ -362,12 +362,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C05F53E21F4C54F800117734 /* XZChartCell.m in Sources */,
-				C05F53DE1F4C54C200117734 /* XZLineBarChart.m in Sources */,
-				DE51B9FC1F50206C0064782C /* XZBarChart.m in Sources */,
+				DE464A081F56678B0016F0DE /* XZBarChart.m in Sources */,
 				C05F53DA1F4C54C200117734 /* XZChart.m in Sources */,
 				18D940E41F46DEB600048ECA /* XZChartTableVC.m in Sources */,
 				C05F53E01F4C54C200117734 /* XZSpaceView.m in Sources */,
 				18D940931F467A3D00048ECA /* ViewController.m in Sources */,
+				DE464A0A1F5667990016F0DE /* XZLineBarChart.m in Sources */,
 				18D940901F467A3D00048ECA /* AppDelegate.m in Sources */,
 				C05F53DB1F4C54C200117734 /* XZChartConst.m in Sources */,
 				C05F53DC1F4C54C200117734 /* XZChartLabel.m in Sources */,

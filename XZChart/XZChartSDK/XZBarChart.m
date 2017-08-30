@@ -323,7 +323,9 @@
             NSString *valueString = childAry[j];
             float value = [valueString floatValue];
             
-            float grade = ((float)value - (i == 0 ? _yLeftValueMin : _yRightValueMin)) / ((float)(i == 0 ? _yLeftValueMax : _yRightValueMax) - (i == 0 ? _yLeftValueMin : _yRightValueMin));
+            float valueMin = i == 0 ? _yLeftValueMin : _yRightValueMin;
+            float valueMax = i == 0 ? _yLeftValueMax : _yRightValueMax;
+            float grade = valueMax - valueMin <= 0 ? 0 : (value - valueMin) / (valueMax - valueMin);
             
             //划线
             CAShapeLayer *_chartLine = [CAShapeLayer layer];

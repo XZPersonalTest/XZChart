@@ -214,7 +214,7 @@
     //画横线
     if (self.isShowHorizonLine) {
         
-        for (int i=0; i<4; i++) {
+        for (int i=0; i < self.yLeftAxis.count - 1; i++) {
             
             CAShapeLayer *shapeLayer = [CAShapeLayer layer];
             UIBezierPath *path = [UIBezierPath bezierPath];
@@ -309,7 +309,7 @@
         CGFloat firstValue = [[childAry objectAtIndex:0] floatValue];
         CGFloat xPosition = XZYLabelwidth + _xLabelWidth/2.0 + 10;
         // 数值与高度比换算
-        float grade = ((float)firstValue-_yLeftValueMin) / ((float)_yLeftValueMax-_yLeftValueMin);
+        float grade = _yLeftValueMax - _yLeftValueMin <= 0 ? 0 : (firstValue-_yLeftValueMin) / (_yLeftValueMax-_yLeftValueMin);
         
         // 第一个点
         //  XZLabelHeight * 2是每个点要向下便宜的单位  XZLabelHeight为转折点数字label高度
@@ -325,7 +325,8 @@
         NSInteger index = 0;
         for (NSString * valueString in childAry) {
             
-            float grade =([valueString floatValue]-_yLeftValueMin) / ((float)_yLeftValueMax-_yLeftValueMin);
+            float grade = _yLeftValueMax - _yLeftValueMin <= 0 ? 0 : ([valueString floatValue]-_yLeftValueMin) / ((float)_yLeftValueMax-_yLeftValueMin);
+            
             if (index != 0) {
                 
                 self.firstPoint = point;
@@ -427,7 +428,7 @@
             NSString *valueString = childAry[j];
             float value = [valueString floatValue];
             
-            float grade = ((float)value-_yRightValueMin) / ((float)_yRightValueMax-_yRightValueMin);
+            float grade = _yRightValueMax - _yRightValueMin <= 0 ? 0 : ((float)value-_yRightValueMin) / ((float)_yRightValueMax-_yRightValueMin);
             
             //划线
             CAShapeLayer *_chartLine = [CAShapeLayer layer];
