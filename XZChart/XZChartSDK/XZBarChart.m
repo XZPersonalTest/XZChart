@@ -272,7 +272,7 @@
         if (i==2)
             return;
         NSArray *childAry = _barChartValue[i];
-        for (int j=0; j<childAry.count; j++) {
+        for (int j=0; j < _xAxis.count; j++) {
             
             //划线
             CAShapeLayer *_chartLine = [CAShapeLayer layer];
@@ -317,7 +317,7 @@
             return;
         NSArray *childAry = _barChartValue[i];
         
-        for (int j=0; j<childAry.count; j++) {
+        for (int j=0; j<_xAxis.count; j++) {
             
             // 数值与高度比换算
             NSString *valueString = childAry[j];
