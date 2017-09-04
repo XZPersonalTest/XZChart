@@ -27,11 +27,18 @@
             }
         }
     }
-    
-    
     float level = (max - min) / 4;
-    max = max + level;
-    min = (min - level) < 0 ? 0 : (min - level);
+    
+    if (max > 0 && min > 0 && level == 0) {
+        
+        max = max * 2;
+        min = 0.00;
+    }
+    else
+    {
+        max = max + level;
+        min = (min - level) < 0 ? 0 : (min - level);
+    }
     
     return CGRangeMake(max, min);
 }
